@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Length converter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      Masukan panjang dalam kilometer:
+    </ion-card-header>
+    <ion-card-content>
+      <input type="text" [(ngModel)]="km">
+    </ion-card-content>
+  </ion-card>  
+
+  hm : {{ hm }} <br>
+  dam : {{ dam }} <br>
+  m : {{ m }} <br>
+  dm : {{ dm }} <br>
+  cm : {{ cm }} <br>
+  mm : {{ mm }}
+
+  <ion-button expand="full" (click)="convertUnit()">Convert</ion-button>
+</ion-content>
